@@ -1,0 +1,57 @@
+.wrap{
+    max-width: 980px;
+    margin: 0 auto;
+}
+#logo{
+    color: #ffffff;
+    margin-bottom: 0;
+}
+.pageWrap{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    flex:1;
+}
+.divider .ant-divider, .ant-divider-vertical{
+    height: 44px;
+    float: left;
+    margin:10px 0;
+}
+#nav{
+    float: left;
+    margin:10px 0;
+    background: none;   
+    border: none; 
+    margin-left: 30px;
+}
+#nav a{
+    color: #ffffff;
+}
+.xsNav{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+
+.indexMenu {
+    border:1px solid #ccc;
+    border-top: none;
+}
+.indexMenu .ant-menu-vertical{
+    border: none;
+}
+.indexMenu li:hover{
+    border-right: 3px solid #1890ff;
+    background-color: #e6f7ff;
+}
+.indexMenu  .ant-menu-item-selected{
+    border-right: 3px solid #1890ff;
+    margin-right: -1px;
+}
+.indexMain{
+    height: 600px;
+    border-left: 1px solid #ccc;
+}
