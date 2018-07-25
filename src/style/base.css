@@ -52,6 +52,42 @@
     margin-right: -1px;
 }
 .indexMain{
-    height: 600px;
     border-left: 1px solid #ccc;
+}
+.indexMain{
+    padding:0 10px;
+}
+.indexMain p{
+    margin: 0;
+}
+.userAvatar {
+    display: block;
+    margin: 10px auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+.userList {
+    line-height: 32px;
+}
+.userList .ant-list-item {
+    position: relative;
+}
+.userList .ant-list-item * {
+    vertical-align: middle;
+}
+.userList .ant-list-item-content {
+    display: block;
+}
+.userList .userName {
+    margin: 0 10px 0 5px;
+}
+.userList h4 {
+    display: inline-block;
+    margin: 0;
+}
+.userList time {
+    position: absolute;
+    right: 0;
+    top: 12px;
 }
