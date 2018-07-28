@@ -7,22 +7,22 @@ export default class IndexMenu extends Component{
         return(
             <Menu>
                 <Menu.Item>
-                    <Link to="index/all">全部</Link>
+                    <Link to="/index/all">全部</Link>
                 </Menu.Item>
                 <Menu.Item>
-                    <Link to="index/good">精华</Link>
+                    <Link to="/index/good">精华</Link>
                 </Menu.Item>
                 <Menu.Item>
-                    <Link to="index/ask">问题</Link>
+                    <Link to="/index/ask">问题</Link>
                 </Menu.Item>
                 <Menu.Item>
-                    <Link to="index/share">分享</Link>
+                    <Link to="/index/share">分享</Link>
                 </Menu.Item>
                 <Menu.Item>
-                    <Link to="index/job">招聘</Link>
+                    <Link to="/index/job">招聘</Link>
                 </Menu.Item>
                 <Menu.Item>
-                    <Link to="index/dev">测试</Link>
+                    <Link to="/index/dev">测试</Link>
                 </Menu.Item>
             </Menu>
         )

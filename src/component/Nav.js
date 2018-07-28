@@ -1,8 +1,29 @@
 import React,{Component} from 'react';
-import {Link} from 'react-router-dom';
+import {Link,withRouter} from 'react-router-dom';
 import{Menu,Icon} from 'antd';
 
-export default class Nav extends Component{
+class Nav extends Component{
+    constructor(props){
+        super(props)
+        let now =  this.getNow(this.props.location);
+        this.state = {
+            now
+        }
+    }
+    getNow(location){
+        let now = location.pathname.split("/");
+        return now[1];
+    }
+    shouldComponentUpdate(nextProps){
+        let now = this.getNow(nextProps.location);
+        if(now !== this.state.now){
+            this.setState({
+                now
+            })
+            return false;
+        }
+        return true;
+    }
     render(){
         let {id,mode} = this.props;
         return(
@@ -22,3 +43,12 @@ export default class Nav extends Component{
         )
     }
 }
+
+export default withRouter((props)=>{
+    let {mode,id,location} = props;
+    return <Nav
+        mode = {mode}
+        id = {id}
+        location = {location}
+    />
+});
